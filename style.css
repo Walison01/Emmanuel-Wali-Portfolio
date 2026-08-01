@@ -34,7 +34,6 @@ header{
     font-weight:700;
     color:#38bdf8;
 }
-
 .nav-links{
     display:flex;
     list-style:none;
@@ -879,9 +878,12 @@ margin:auto auto 40px;
         gap:40px;
     }
 
-    .hero-text{
-        width:100%;
-    }
+   .hero-text{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
 
     .hero-text h1{
         font-size:42px;
@@ -894,10 +896,10 @@ margin:auto auto 40px;
         white-space:normal;
     }
 
-    .description{
-        max-width:100%;
-        font-size:16px;
-        margin:20px auto 30px;
+   .description{
+    max-width:95%;
+    margin:20px auto 30px;
+    text-align:center;
     }
 
     .hero-buttons{
@@ -962,10 +964,19 @@ margin:auto auto 40px;
     }
 
     .about-container{
-        flex-direction:column;
-        text-align:center;
-        gap:40px;
-    }
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:40px;
+}
+
+.about-text{
+    width:100%;
+}
+
+.about-buttons{
+    justify-content:center;
+}
 
     .about-image img{
         width:240px;
@@ -977,10 +988,22 @@ margin:auto auto 40px;
         padding:80px 20px;
     }
 
-    .contact-container{
-        flex-direction:column;
-        gap:40px;
-    }
+   .contact-container{
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+}
+
+.contact-info,
+.contact-form{
+    width:100%;
+    max-width:500px;
+    text-align:center;
+}
+
+.contact-form button{
+    align-self:center;
+}
 
     .contact-info,
     .contact-form{
@@ -994,10 +1017,28 @@ margin:auto auto 40px;
 
     /* Footer */
 
-    .footer-content{
-        flex-direction:column;
-        text-align:center;
-        gap:20px;
-    }
+   .footer-container{
+    grid-template-columns:1fr;
+    text-align:center;
+}
 
+.footer-bottom{
+    flex-direction:column;
+    text-align:center;
+}
+    .logo{
+    width:100%;
+    text-align:center;
+    font-size:22px;
+    white-space:normal;
+}
+}
+.service-card,
+.project-card,
+.stat-box,
+.skill-card,
+.testimonial-card{
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
 }
