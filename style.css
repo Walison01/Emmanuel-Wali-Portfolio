@@ -167,7 +167,7 @@ header{
     display:flex;
     align-items:center;
     justify-content:center;
-    padding:120px 10% 60px;
+    padding:180px 10% 60px;
 }
 
 .hero-content{
@@ -874,82 +874,84 @@ margin:auto auto 40px;
         font-size:17px;
     }
 
-    /* ---------- Hero ---------- */
+    /* Hero */
 
-    .hero{
-        padding:210px 20px 80px;
-        min-height:auto;
-    }
+.hero{
+    min-height:auto;
+    padding:220px 20px 70px;
+}
 
-    .hero-content{
-        display:flex;
-        flex-direction:column-reverse;
-        justify-content:center;
-        align-items:center;
-        text-align:center;
-        gap:45px;
-    }
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    gap:30px;
+}
 
-    .hero-text{
-        width:100%;
-    }
+.hero-image{
+    order:1;
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
 
-    .greeting{
-        font-size:22px;
-    }
+.profile-image{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+}
 
-    .hero-text h1{
-        font-size:58px;
-        line-height:1.15;
-        margin-bottom:12px;
-    }
+.hero-text{
+    order:2;
+    width:100%;
+}
 
-    .hero-text h2{
-        font-size:32px;
-        white-space:normal;
-        min-height:auto;
-        margin-bottom:20px;
-    }
+.greeting{
+    font-size:22px;
+}
 
-    .description{
-        max-width:100%;
-        font-size:18px;
-        line-height:1.8;
-        margin:25px auto 35px;
-    }
+.hero-text h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:15px;
+}
 
-    .hero-buttons{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:18px;
-    }
+.hero-text h2{
+    font-size:30px;
+    white-space:normal;
+    min-height:auto;
+    margin-bottom:20px;
+}
 
-    .btn,
-    .btn-outline{
-        width:240px;
-        text-align:center;
-    }
+.description{
+    max-width:100%;
+    font-size:18px;
+    line-height:1.7;
+    margin:20px auto 30px;
+}
 
-    .hero-image{
-        display:flex;
-        justify-content:center;
-        width:100%;
-    }
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
 
-    .profile-image{
-        width:240px;
-        height:240px;
-        margin:0 auto;
-    }
+.btn,
+.btn-outline{
+    width:230px;
+    text-align:center;
+}
 
-    .social-links{
-        justify-content:center;
-        flex-wrap:wrap;
-        gap:18px;
-        margin-top:30px;
-    }
-
+.social-links{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
     /* ---------- Stats ---------- */
 
     .stats{
